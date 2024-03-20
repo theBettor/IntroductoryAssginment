@@ -1,5 +1,6 @@
 package com.example.introductoryassginment
 
+<<<<<<< HEAD
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -7,6 +8,9 @@ import android.renderscript.ScriptGroup.Input
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+=======
+import android.os.Bundle
+>>>>>>> d28a3a7cfd2e192915e9532d5af12f25f279d6f4
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -15,6 +19,7 @@ import androidx.core.view.WindowInsetsCompat
 class SignUpActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+<<<<<<< HEAD
         setContentView(R.layout.activity_sign_up)
 
         // 변수명 짜는게 제일 헷갈리는 것 같다. 보다시피 SingInActivity에 선언된 변수명들과 이름이 같은 것들이 있기 때문이다.
@@ -49,4 +54,14 @@ class SignUpActivity : AppCompatActivity() {
     private fun showToast(context: Context, message: String) {
         Toast.makeText(context, message, Toast.LENGTH_SHORT).show()
     }
+=======
+        enableEdgeToEdge()
+        setContentView(R.layout.activity_sign_up)
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
+    }
+>>>>>>> d28a3a7cfd2e192915e9532d5af12f25f279d6f4
 }
