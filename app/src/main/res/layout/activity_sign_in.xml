@@ -29,27 +29,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logoView" /><![CDATA[
-
-
-
-
-
-
-
-    " />
-
-
-
-
-
-
-
-
-
-
-
-    ]]>
+        app:layout_constraintTop_toBottomOf="@+id/logoView" />
 
     <EditText
         android:id="@+id/editTextId"
@@ -99,11 +79,11 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
 
     <Button
-        android:id="@+id/signupBtn"
+        android:id="@+id/signInBtn"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginTop="10dp"
-        android:onClick="singupBtnClicked"
+        android:onClick="singIpBtnClicked"
         android:text="회원 가입"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

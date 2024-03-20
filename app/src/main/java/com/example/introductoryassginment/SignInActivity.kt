@@ -5,21 +5,18 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-import android.widget.ImageView
-import android.widget.TextView
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
 class SignInActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_signin)
+        setContentView(R.layout.activity_sign_in)
 
         // 1. 선언부
         // xml에 만든것 중에 사용할 것들 싹다 변수 선언 해주기
         val btn_login = findViewById<Button>(R.id.loginBtn)
-        val btn_signup = findViewById<Button>(R.id.signupBtn)
+        val btn_signup = findViewById<Button>(R.id.signInBtn)
         val edittext_id = findViewById<EditText>(R.id.editTextId)
         val editext_pw = findViewById<EditText>(R.id.editTextPassword)
 
