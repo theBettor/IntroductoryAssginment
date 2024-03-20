@@ -5,33 +5,18 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-<<<<<<< HEAD
 import android.widget.Toast
-=======
-import android.widget.ImageView
-import android.widget.TextView
-import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
->>>>>>> d28a3a7cfd2e192915e9532d5af12f25f279d6f4
 import androidx.appcompat.app.AppCompatActivity
 
 class SignInActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-<<<<<<< HEAD
         setContentView(R.layout.activity_sign_in)
-=======
-        setContentView(R.layout.activity_signin)
->>>>>>> d28a3a7cfd2e192915e9532d5af12f25f279d6f4
 
         // 1. 선언부
         // xml에 만든것 중에 사용할 것들 싹다 변수 선언 해주기
         val btn_login = findViewById<Button>(R.id.loginBtn)
-<<<<<<< HEAD
-        val btn_signup = findViewById<Button>(R.id.signInBtn)
-=======
-        val btn_signup = findViewById<Button>(R.id.signupBtn)
->>>>>>> d28a3a7cfd2e192915e9532d5af12f25f279d6f4
+        val btn_signin = findViewById<Button>(R.id.signInBtn)
         val edittext_id = findViewById<EditText>(R.id.editTextId)
         val editext_pw = findViewById<EditText>(R.id.editTextPassword)
 
@@ -44,7 +29,7 @@ class SignInActivity : AppCompatActivity() {
         }
 
         // 회원가입 액티비티로 이동
-        btn_signup.setOnClickListener {
+        btn_signin.setOnClickListener {
             val intent = Intent(this, SignUpActivity::class.java)
             startActivity(intent)
         }
