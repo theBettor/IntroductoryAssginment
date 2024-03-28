@@ -60,7 +60,6 @@ class SignInActivity : AppCompatActivity() {
         } else {
             showToast(context, "로그인 성공!")
             val edit_text_id = findViewById<EditText>(R.id.editTextId)
-            val edit_text_pw = findViewById<EditText>(R.id.editTextPassword)
             val strData = edit_text_id.getText().toString() // getText()없이 데이터를 보내면 androidx.appcompat.widget.AppCompatEditText 이런 메시지를 통해 원하는 아이디 값이 아닌 무언가가 엄청 길게 출력되어진다.
             val intent = Intent(this, HomeActivity::class.java)
             intent.putExtra("dataFromSignInActivity", strData)
